@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<!-- Quick example of posts on homepage -->
+
+<div id="content">
+    <!-- takes content from posts, limited to 3 -->
+    {% for post in site.posts limit: 3 %}
+    <article>
+        <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+        <div class="post_content">
+            {{post.content}}
+        </div>
+    </article>
+    {% endfor %}
+</div>

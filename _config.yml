@@ -1,0 +1,5 @@
+site_name: 'WebViews'
+markdown: rdiscount
+rdiscount:
+    extensions: [smart]
+permalink: /views/:title
